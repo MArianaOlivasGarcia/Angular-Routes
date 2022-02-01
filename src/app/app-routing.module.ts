@@ -7,7 +7,7 @@ import { DashboardRoutingModule } from './dashboard/dashboard-routing.module';
 import { ErrorPageComponent } from './error-page/error-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: '**', component: ErrorPageComponent },
 ];
 

@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 
 const routes: Routes = [
-    { path: 'dashboard',
+    { path: '',
       component: DashboardComponent,
       // canActivate: [ AuthGuard ],
       loadChildren: () => import('./child-routing.module').then( m => m.ChildRoutingModule  )
