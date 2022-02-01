@@ -1,0 +1,10 @@
+.isActive i, .isActive span{
+    color: white !important;
+}
+
+
+
+a {
+    display: flex;
+    align-items: center;
+}

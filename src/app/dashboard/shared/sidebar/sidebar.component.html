@@ -1,0 +1,29 @@
+<aside class="left-sidebar">
+    <!-- Sidebar scroll-->
+    <div class="scroll-sidebar">
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+                
+               <ng-container *ngFor="let item of menu">
+
+                    <li class="nav-small-cap">{{ item.title }}</li>
+
+                    <li *ngFor="let subItem of item.submenu" routerLinkActive="isActive"> 
+                        <a  [routerLink]="subItem.urlTo" 
+                            class="has-arrow waves-effect waves-dark" 
+                            aria-expanded="false">
+                            <i [class]="subItem.icon" aria-hidden="true"></i>
+                            <span class="hide-menu">{{ subItem.title }} </span>
+                        </a>
+                    </li>
+
+                </ng-container>
+
+            
+            </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+    </div>
+    <!-- End Sidebar scroll-->
+</aside>
